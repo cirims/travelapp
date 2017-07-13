@@ -1,0 +1,143 @@
+#nav {
+		display: none;
+		margin-top: 20px;
+		clear: left;
+		background: #f1f1f1;
+		padding: 30px 70px 10px 30px;
+
+	}
+
+#burger {
+	float: left;
+	padding:0 20px 0 20px;
+}
+
+nav a {
+	display: block;
+	padding-bottom: 20px;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    color: #222;
+}
+
+nav a:hover {
+	color: #0A5CA2;
+}
+
+header {
+	margin-top:20px;
+  height: 40px;
+}
+
+header h1 {
+	float: left;
+}
+
+
+.fa-bars {
+	font-size: 22px !important;
+	color: #0A5CA2;
+}
+
+h1 {
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: #0A5CA2;
+}
+
+
+
+/* SEARCH */
+
+.search-form {
+  position: absolute;
+  left: 99%;
+  top: 20px;
+  transform: translate(-85%);
+}
+
+.search-box input[type="textbox"] {
+  border: none;
+  background: none;
+  z-index: 1;
+  width: 25px;
+  height: 17px;
+  transition: all .25s ease-in .25s;
+  color: transparent;
+  font-size: 16px;
+  line-height: 25px;
+}
+.search-box input[type="textbox"]:hover {
+  cursor: pointer;
+}
+.search-box input[type="textbox"]:hover:focus {
+  cursor: text;
+}
+
+.search-box input[type="textbox"]:focus {
+  width: 250px;
+  margin-top: 5px;
+ padding: 3px 0 0 20px;
+  outline: none;
+  color: black;
+  background: none;
+
+}
+.search-box input[type="textbox"]:focus + span {
+  width: 250px;
+  height: 30px;
+  border: none;
+  background: #f1f1f1;
+}
+.search-box input[type="textbox"]:focus + span::before {
+  width: 2px;
+  opacity: 0;
+  transition: all .25s ease-in;
+}
+.search-box input[type="textbox"] + span {
+  z-index: -1;
+  position: absolute;
+  border: 2px solid #222;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  transition: all .25s ease-in .25s;
+  border-radius: 25px;
+  left: 0px;
+}
+.search-box input[type="textbox"] + span::before {
+  transition: all .25s ease-in .5s;
+  transform-origin: left top;
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  border-radius: 5px;
+  background:#222;
+  transform: rotate(45deg) translate(28px, -2px);
+  top: -9px;
+  left: -9px;
+}
+
+
+
+
+/*MAP*/
+
+html, body, #map-canvas{
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+  width: 100%;
+}
+
+/*#panel {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -180px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+}*/
